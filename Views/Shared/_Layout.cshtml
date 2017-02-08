@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Places</title>
+  </head>
+  <body>
+    <div class="forms">
+      <h2>Enter the places you've been:</h2>
+      <form  action="add-place" method="post">
+        <div class="form-group">
+          <label for="city">City: </label>
+          <input type="text" name="city" id="city">
+        </div>
+        <div class="form-group">
+          <label for="country">Country: </label>
+          <input type="text" name="country" id="country">
+        </div>
+        <div class="form-group">
+          <label for="season">Season: </label>
+          <input type="text" name="season" id="season">
+        </div>
+        <button type="submit" name="button">Add to list!</button>
+      </form>
+    </div>
+    @RenderBody()
+  </body>
+</html>
